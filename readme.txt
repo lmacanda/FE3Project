@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap");
+@font-face {
+  font-family: "Integral CF";
+  src: url(fonts/IntegralCF-Regular.otf);
+}
+@font-face {
+  font-family: "Averta Demo";
+  src: url(fonts/AvertaDemo-Regular.otf);
+}
+
+$primary-white: #ffffff;
+$secondary-white: #dcdcdc33;
+$primary-black: #000000;
+$primary-blue: #3d00b7;
+$secondary-blue: #2639ed;
+$primary-green: #00ac4f;
+$primary-gray: #565656;
+$secondary-gray: #636363;
+$dark-gray: #363639;
+
+/*Top Menu*/
+$primary-neutral: #efefef;
+$secondary-neutral: #c0c0c0;
+
+/*Amaze NFT*/
+$amaze-black: #292d32;
+$amaze-gray: #696969;
+/*Collection Over*/
+$collection-over-blue: #1e93ff;
+$collection-over-light-blue: #14c8b0;
+$collection-over-primary-red: #ff002e;
+$collection-over-dark-gray: #3a3a3a;
+$collection-over-blue: #220970;
+/*Collection NFT*/
+$collection-nft-blue: #2639ed;
+/*Discover*/
+$discover-blue: #371c87;
+$discover-purple: #4f33a3;
+$discover-gray: #838383;
+/*Footer*/
+$footer-gray: #959595;
+$footer-black: #3d3d3d;
+
+$FFamilyDM: "DM Sans", sans-serif;
+$FFamilyAverta: "Averta Demo", sans-serif;
+$FFamilyInteg: "Integral CF", sans-serif;
+
+$font-weightLight: 400;
+$font-weightMedium: 500;
+$font-weightSemiBold: 600;
+$font-weightBold: 700;
+$font-weightExtraBold: 800;
+
+$fontSize12: 0.75rem;
+$fontSize14: 0.875rem;
+$fontSize16: 1rem;
+$fontSize17: 1.0625rem;
+$fontSize18: 1.125rem;
+$fontSize20: 1.25rem;
+$fontSize21: 1.3125rem;
+$fontSize22: 1.375rem;
+$fontSize24: 1.5rem;
+$fontSize28: 1.8rem;
+$fontSize36: 2.25rem;
+$fontSize40: 3rem;
+$fontSize50: 3.125rem;
+$fontSize60: 3.75rem;
+
+/*Top_Menu*/
+
+.top_menu {
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-top: 31px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_logo {
+    font-family: $FFamilyInteg;
+    color: $primary-blu;
+    font-size: $fontSize24;
+    font-weight: $font-weightBold;
+    text-decoration: none;
+  }
+
+  /*Nav*/
+  &_mobile_nav {
+    &_toggle {
+      display: none;
+    }
+
+    &_nav_list {
+      display: flex;
+      gap: clamp(1rem, 5vh, 2.938rem);
+      list-style: none;
+      align-items: baseline;
+      margin: 0;
+      font-size: $fontSize16;
+      font-weight: $font-weightMedium;
+      letter-spacing: 0.64px;
+      font-family: $FFamilyDM;
+
+      &_item a {
+        text-decoration: none;
+        color: $primary-black;
+
+        &:hover {
+          color: $primary-blue;
+        }
+        &:focus {
+          color: $primary-blue;
+        }
+      }
+    }
+  }
+
+  &_search_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid $primary-neutral;
+    border-radius: 100px;
+
+    &_input {
+      border: none;
+      outline: none;
+      color: $secondary-neutral;
+      font-family: $FFamilyDM;
+      font-size: $fontSize16;
+      font-weight: $font-weightMedium;
+      margin: 12px 30px;
+    }
+
+    &_icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 13px;
+    }
+  }
+
+  &_btn {
+    display: flex;
+    gap: 20px;
+
+    button {
+      border-radius: 60px;
+      font-family: $FFamilyDM;
+      font-size: $fontSize14;
+      font-weight: $font-weightBold;
+    }
+
+    &_upload {
+      background-color: $primary-blue;
+      color: $primary-white;
+      border: $primary-blue;
+      padding: 18px 40px;
+    }
+
+    &connect {
+      background-color: $primary-white;
+      color: $primary-blue;
+      border: 2px solid $primary-blue;
+      padding: 18px 22px;
+    }
+  }
+}
+
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/*Hero*/
+
+.hero {
+  margin: 72px 120px 0 120px;
+  display: flex;
+  justify-content: space-between;
+
+  &_left {
+    &_title {
+      width: 60%;
+      font-size: $fontSize40;
+      font-weight: $font-weightLight;
+      color: $primary-black;
+      font-family: $FFamilyInteg;
+      letter-spacing: 2px;
+      margin-bottom: 2%;
+    }
+
+    &_text {
+      font-family: $FFamilyDM;
+      width: 40%;
+      color: $primary-gray;
+      font-size: $fontSize20;
+      font-weight: $font-weightLight;
+      line-height: 160%;
+      margin-bottom: 3%;
+    }
+
+    &_btn {
+      background-color: $primary-blue;
+      color: $primary-white;
+      border: $primary-blue;
+      padding: 18px 40px;
+      border-radius: 60px;
+      font-family: $FFamilyAverta;
+      font-size: $fontSize20;
+      font-weight: $font-weightBold;
+      letter-spacing: 1.3px;
+      margin-bottom: 3%;
+    }
+
+    &_data {
+      display: flex;
+      gap: 2%;
+
+      &_item {
+        font-family: $FFamilyInteg;
+        color: $primary-black;
+        font-size: $fontSize40;
+        font-weight: $font-weightBold;
+
+        &_sub {
+          color: $primary-gray;
+          font-family: $FFamilyDM;
+          font-size: $fontSize20;
+          font-weight: $font-weightLight;
+        }
+      }
+    }
+  }
+  &_right {
+    &_img3 {
+      background-image: url(hero_assets/unsplash_tZCrFpSNiIQ.png);
+      z-index: 10;
+      width: 310px;
+      height: 341px;
+      position: absolute;
+      right: 154px;
+      transform: translateY(16%);
+    }
+
+    &_img2 {
+      background-image: url(hero_assets/unsplash_pVoEPpLw818.png);
+      z-index: 20;
+      width: 356px;
+      height: 391.6px;
+      position: absolute;
+      transform: translate(-120%, 7%);
+    }
+
+    &_img1 {
+      position: absolute;
+      background-image: url(hero_assets/unsplash_E8Ufcyxz514.png);
+      z-index: 30;
+      width: 400px;
+      height: 440px;
+      border-radius: 24px;
+      transform: translateX(-128%);
+
+      &_ellipse {
+        position: absolute;
+        bottom: 23%;
+        left: -17%;
+      }
+
+      &_box_top {
+        font-family: $FFamilyDM;
+        margin: 5%;
+        color: $primary-white;
+        font-weight: $font-weightBold;
+
+        &_title {
+          font-size: $fontSize28;
+        }
+
+        &_user {
+          display: flex;
+          align-items: center;
+          gap: 2%;
+
+          &_name {
+            font-size: $fontSize20;
+          }
+
+          &_img {
+            background-image: url(hero_assets/Ellipse\ 95.png);
+            border-radius: 32.821px;
+            width: 32px;
+            height: 32.821px;
+          }
+        }
+      }
+      &_box_down {
+        color: $primary-white;
+        font-family: $FFamilyDM;
+        display: flex;
+        position: absolute;
+        inset: auto 0px 0px 0px;
+        justify-content: space-between;
+        padding: 4% 7%;
+        margin: 5%;
+        backdrop-filter: blur(8px);
+        border-radius: 12px;
+        box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.08);
+
+        &_overlay {
+          border-radius: 12px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(255, 255, 255, 0.2);
+        }
+
+        &_current {
+          width: 50%;
+
+          &_text {
+            font-size: $fontSize12;
+            font-weight: $font-weightMedium;
+            margin-bottom: 5%;
+          }
+
+          &_crypto {
+            display: flex;
+            gap: 8%;
+          }
+
+          &_value {
+            font-size: $fontSize16;
+            font-weight: $font-weightBold;
+          }
+        }
+
+        &_ends {
+          &_text {
+            font-size: $fontSize12;
+            font-weight: $font-weightMedium;
+            margin-bottom: 5%;
+          }
+
+          &_time {
+            font-size: $fontSize16;
+            font-weight: $font-weightBold;
+          }
+        }
+      }
+    }
+  }
+}
