@@ -1,73 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap");
-@font-face {
-  font-family: "Integral CF";
-  src: url(fonts/IntegralCF-Regular.otf);
+/* Colors */
+@use "colors" as c;
+
+/* Folors */
+@use "fonts" as f;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@font-face {
-  font-family: "Averta Demo";
-  src: url(fonts/AvertaDemo-Regular.otf);
+
+@mixin flex-h-center {
+  display: flex;
+  justify-content: center;
 }
 
-$primary-white: #ffffff;
-$secondary-white: #dcdcdc33;
-$primary-black: #000000;
-$primary-blue: #3d00b7;
-$secondary-blue: #2639ed;
-$primary-green: #00ac4f;
-$primary-gray: #565656;
-$secondary-gray: #636363;
-$dark-gray: #363639;
+@mixin flex-v-center {
+  display: flex;
+  align-items: center;
+}
 
-/*Top Menu*/
-$primary-neutral: #efefef;
-$secondary-neutral: #c0c0c0;
-
-/*Amaze NFT*/
-$amaze-black: #292d32;
-$amaze-gray: #696969;
-/*Collection Over*/
-$collection-over-blue: #1e93ff;
-$collection-over-light-blue: #14c8b0;
-$collection-over-primary-red: #ff002e;
-$collection-over-dark-gray: #3a3a3a;
-$collection-over-blue: #220970;
-/*Collection NFT*/
-$collection-nft-blue: #2639ed;
-/*Discover*/
-$discover-blue: #371c87;
-$discover-purple: #4f33a3;
-$discover-gray: #838383;
-/*Footer*/
-$footer-gray: #959595;
-$footer-black: #3d3d3d;
-
-$FFamilyDM: "DM Sans", sans-serif;
-$FFamilyAverta: "Averta Demo", sans-serif;
-$FFamilyInteg: "Integral CF", sans-serif;
-
-$font-weightLight: 400;
-$font-weightMedium: 500;
-$font-weightSemiBold: 600;
-$font-weightBold: 700;
-$font-weightExtraBold: 800;
-
-$fontSize12: 0.75rem;
-$fontSize14: 0.875rem;
-$fontSize16: 1rem;
-$fontSize17: 1.0625rem;
-$fontSize18: 1.125rem;
-$fontSize20: 1.25rem;
-$fontSize21: 1.3125rem;
-$fontSize22: 1.375rem;
-$fontSize24: 1.5rem;
-$fontSize28: 1.8rem;
-$fontSize36: 2.25rem;
-$fontSize40: 3rem;
-$fontSize50: 3.125rem;
-$fontSize60: 3.75rem;
+body {
+  margin: 0;
+  padding: 0;
+  background: c.$primary-white;
+  background-size: cover;
+  font-family: f.$FFamilyDM;
+  overflow-x: hidden !important;
+}
 
 /*Top_Menu*/
-
 .top_menu {
   margin-left: 120px;
   margin-right: 120px;
@@ -77,10 +39,10 @@ $fontSize60: 3.75rem;
   align-items: center;
 
   &_logo {
-    font-family: $FFamilyInteg;
-    color: $primary-blue;
-    font-size: $fontSize24;
-    font-weight: $font-weightBold;
+    font-family: f.$FFamilyInteg;
+    color: c.$primary-blue;
+    font-size: f.$fontSize24;
+    font-weight: f.$font-weightBold;
     text-decoration: none;
   }
 
@@ -98,20 +60,20 @@ $fontSize60: 3.75rem;
       list-style: none;
       align-items: baseline;
       margin: 0;
-      font-size: $fontSize16;
-      font-weight: $font-weightMedium;
+      font-size: f.$fontSize16;
+      font-weight: f.$font-weightMedium;
       letter-spacing: 0.64px;
-      font-family: $FFamilyDM;
+      font-family: f.$FFamilyDM;
 
       &_item a {
         text-decoration: none;
-        color: $primary-black;
+        color: c.$primary-black;
 
         &:hover {
-          color: $primary-blue;
+          color: c.$primary-blue;
         }
         &:focus {
-          color: $primary-blue;
+          color: c.$primary-blue;
         }
       }
     }
@@ -121,16 +83,16 @@ $fontSize60: 3.75rem;
     display: flex;
     align-items: center;
     gap: 10px;
-    border: 2px solid $primary-neutral;
+    border: 2px solid c.$primary-neutral;
     border-radius: 100px;
 
     &_input {
       border: none;
       outline: none;
-      color: $secondary-neutral;
-      font-family: $FFamilyDM;
-      font-size: $fontSize16;
-      font-weight: $font-weightMedium;
+      color: c.$secondary-neutral;
+      font-family: f.$FFamilyDM;
+      font-size: f.$fontSize16;
+      font-weight: f.$font-weightMedium;
       margin: 12px 30px;
     }
 
@@ -147,22 +109,22 @@ $fontSize60: 3.75rem;
 
     button {
       border-radius: 60px;
-      font-family: $FFamilyDM;
-      font-size: $fontSize14;
-      font-weight: $font-weightBold;
+      font-family: f.$FFamilyDM;
+      font-size: f.$fontSize14;
+      font-weight: f.$font-weightBold;
     }
 
     &_upload {
-      background-color: $primary-blue;
-      color: $primary-white;
-      border: $primary-blue;
+      background-color: c.$primary-blue;
+      color: c.$primary-white;
+      border: c.$primary-blue;
       padding: 18px 40px;
     }
 
     &_connect {
-      background-color: $primary-white;
-      color: $primary-blue;
-      border: 2px solid $primary-blue;
+      background-color: c.$primary-white;
+      color: c.$primary-blue;
+      border: 2px solid c.$primary-blue;
       padding: 18px 22px;
     }
   }
@@ -190,33 +152,33 @@ $fontSize60: 3.75rem;
   &_left {
     &_title {
       width: 60%;
-      font-size: $fontSize40;
-      font-weight: $font-weightLight;
-      color: $primary-black;
-      font-family: $FFamilyInteg;
+      font-size: f.$fontSize40;
+      font-weight: f.$font-weightLight;
+      color: c.$primary-black;
+      font-family: f.$FFamilyInteg;
       letter-spacing: 2px;
       margin-bottom: 2%;
     }
 
     &_text {
-      font-family: $FFamilyDM;
+      font-family: f.$FFamilyDM;
       width: 40%;
-      color: $primary-gray;
-      font-size: $fontSize20;
-      font-weight: $font-weightLight;
+      color: c.$primary-gray;
+      font-size: f.$fontSize20;
+      font-weight: f.$font-weightLight;
       line-height: 160%;
       margin-bottom: 3%;
     }
 
     &_btn {
-      background-color: $primary-blue;
-      color: $primary-white;
-      border: $primary-blue;
+      background-color: c.$primary-blue;
+      color: c.$primary-white;
+      border: c.$primary-blue;
       padding: 18px 40px;
       border-radius: 60px;
-      font-family: $FFamilyAverta;
-      font-size: $fontSize20;
-      font-weight: $font-weightBold;
+      font-family: f.$FFamilyAverta;
+      font-size: f.$fontSize20;
+      font-weight: f.$font-weightBold;
       letter-spacing: 1.3px;
       margin-bottom: 3%;
     }
@@ -226,16 +188,16 @@ $fontSize60: 3.75rem;
       gap: 2%;
 
       &_item {
-        font-family: $FFamilyInteg;
-        color: $primary-black;
-        font-size: $fontSize40;
-        font-weight: $font-weightBold;
+        font-family: f.$FFamilyInteg;
+        color: c.$primary-black;
+        font-size: f.$fontSize40;
+        font-weight: f.$font-weightBold;
 
         &_sub {
-          color: $primary-gray;
-          font-family: $FFamilyDM;
-          font-size: $fontSize20;
-          font-weight: $font-weightLight;
+          color: c.$primary-gray;
+          font-family: f.$FFamilyDM;
+          font-size: f.$fontSize20;
+          font-weight: f.$font-weightLight;
         }
       }
     }
@@ -276,13 +238,13 @@ $fontSize60: 3.75rem;
       }
 
       &_box_top {
-        font-family: $FFamilyDM;
+        font-family: f.$FFamilyDM;
         margin: 5%;
-        color: $primary-white;
-        font-weight: $font-weightBold;
+        color: c.$primary-white;
+        font-weight: f.$font-weightBold;
 
         &_title {
-          font-size: $fontSize28;
+          font-size: f.$fontSize28;
         }
 
         &_user {
@@ -291,7 +253,7 @@ $fontSize60: 3.75rem;
           gap: 2%;
 
           &_name {
-            font-size: $fontSize20;
+            font-size: f.$fontSize20;
           }
 
           &_img {
@@ -303,8 +265,8 @@ $fontSize60: 3.75rem;
         }
       }
       &_box_down {
-        color: $primary-white;
-        font-family: $FFamilyDM;
+        color: c.$primary-white;
+        font-family: f.$FFamilyDM;
         display: flex;
         position: absolute;
         inset: auto 0px 0px 0px;
@@ -329,8 +291,8 @@ $fontSize60: 3.75rem;
           width: 50%;
 
           &_text {
-            font-size: $fontSize12;
-            font-weight: $font-weightMedium;
+            font-size: f.$fontSize12;
+            font-weight: f.$font-weightMedium;
             margin-bottom: 5%;
           }
 
@@ -340,21 +302,21 @@ $fontSize60: 3.75rem;
           }
 
           &_value {
-            font-size: $fontSize16;
-            font-weight: $font-weightBold;
+            font-size: f.$fontSize16;
+            font-weight: f.$font-weightBold;
           }
         }
 
         &_ends {
           &_text {
-            font-size: $fontSize12;
-            font-weight: $font-weightMedium;
+            font-size: f.$fontSize12;
+            font-weight: f.$font-weightMedium;
             margin-bottom: 5%;
           }
 
           &_time {
-            font-size: $fontSize16;
-            font-weight: $font-weightBold;
+            font-size: f.$fontSize16;
+            font-weight: f.$font-weightBold;
           }
         }
       }
@@ -382,8 +344,8 @@ $fontSize60: 3.75rem;
       z-index: 0;
       display: none;
       inset: 0rem 0rem 0rem auto;
-      background: $primary-neutral;
-      background-color: $primary-black;
+      background: c.$primary-neutral;
+      background-color: c.$primary-black;
 
       &_list {
         flex-direction: column;
@@ -391,7 +353,7 @@ $fontSize60: 3.75rem;
         padding: 50px 20px 0 20px;
 
         a {
-          color: $primary-white;
+          color: c.$primary-white;
         }
       }
     }
@@ -413,4 +375,280 @@ $fontSize60: 3.75rem;
   .active {
     display: none;
   }
+}
+
+
+/* Discover More NFTs */
+.disc-nft {
+  width: 100%;
+  height: 100%;
+  margin: 64px 120px 47px 120px;
+
+  &-header {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+    &-title {
+      color: #000;
+      font-family: f.$FFamilyInteg;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    
+  }
+
+  &-cat {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    &-tab {
+      overflow: hidden;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+
+      &-left {
+        width: 70%;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 2%;
+
+        &-tablinks {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          padding: 10px 20px;
+          color: #000;
+          font-family: f.$FFamilyDM;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 17.452px;
+          background: c.$discover-tab-btns-bg;
+          border-radius: 100px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+
+          &:hover {
+            color: c.$primary-white;
+            background: c.$discover-nft-blue;
+          }
+
+          &.active {
+            color: c.$primary-white;
+            background: c.$discover-nft-blue;
+          }
+
+        }
+
+      }
+
+      &-right {
+        width: 30%;
+        display: flex;
+        flex-flow: row wrap;
+
+        &-filter {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: flex-end;
+          gap: 10px;
+          padding: 10px 20px;
+          font-family: f.$FFamilyDM;
+          color: #000;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 17.452px;
+          background: c.$discover-tab-btns-bg;
+          border-radius: 100px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+
+          &:hover, &.active {
+            color: c.$primary-white;
+            background: c.$discover-nft-blue;
+          }
+
+          &-img {
+            width: 24px;
+            height: 24px;
+            filter: none;
+
+            &:hover, &.active {
+              filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+            }
+
+          }
+
+          &:hover &-img, &.active &-img {
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+          }
+
+        }
+
+      }
+
+    }
+
+    &-tabcontent {
+      display: none;
+      width: 81%;
+      padding: 40px 0 47px 0;
+      overflow: hidden;
+
+      &-box {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        &-card {
+          width: 22%;
+          height: 373px;
+          border-radius: 13.165px;
+          border: 1.097px solid c.$discover-nft-card-bd;
+          background: c.$primary-white;
+
+          &-image {
+            width: 100%;
+            height: 70%;
+            border-radius: inherit;
+            
+            &-img {
+              width: 100%;
+              height: 100%;
+              padding: 2%;
+            }
+
+          }
+
+          &-users {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            top: -5.5%;
+
+            &-img-1 {
+              width: 30.718px;
+              height: 30.718px;
+              flex-shrink: 0;
+              border-radius: 30.718px;
+              border: 2.194px solid c.$primary-white;
+              margin-left: 6%;
+            }
+
+            &-img-2 {
+              width: 30.718px;
+              height: 30.718px;
+              flex-shrink: 0;
+              border-radius: 30.718px;
+              border: 2.194px solid c.$primary-white;
+              position: relative;
+              left: -4%;
+            }
+
+            &-img-3 {
+              width: 30.718px;
+              height: 30.718px;
+              flex-shrink: 0;
+              border-radius: 30.718px;
+              border: 2.194px solid c.$primary-white;
+              position: relative;
+              left: -8%;
+            }
+
+            &-img-4 {
+              width: 30.718px;
+              height: 30.718px;
+              flex-shrink: 0;
+              border-radius: 30.718px;
+              border: 2.194px solid c.$primary-white;
+              position: relative;
+              left: -12%;
+            }
+
+          }
+
+          &-info {
+            display: flex;
+            flex-flow: column nowrap;
+
+            &-h {
+              display: flex;
+              flex-flow: row wrap;
+
+              &-title {
+                color: #000;
+                font-family: f.$FFamilyDM;
+                font-size: 19.747px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 19.146px;
+                margin: -6% 2%;
+              }
+
+            }
+
+            &-price {
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: space-between;
+              margin-top: 6%;
+
+              &-left {
+                display: flex;
+                flex-flow: row wrap;
+                justify-self: flex-start;
+                width: 50%;
+
+                img {
+                  width: 9.359px;
+                  height: 15.359px;
+                  margin: 0 2%;
+                }
+
+                span {
+                  color: c.$discover-nft-card-green;
+                  font-family: f.$FFamilyDM;
+                  font-size: 10.971px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: normal;
+                }
+
+              }
+
+              &-right {
+                display: flex;
+                flex-flow: row wrap;
+                justify-self: flex-end;
+                width: 50%;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+    
+  }
+
 }
