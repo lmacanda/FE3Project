@@ -505,6 +505,7 @@ body {
 .disc-nft-cat-tabcontent-box-card-info {
   display: flex;
   flex-flow: column nowrap;
+  margin: 0 5%;
 }
 .disc-nft-cat-tabcontent-box-card-info-h {
   display: flex;
@@ -517,13 +518,13 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 19.146px;
-  margin: -6% 2%;
+  margin: -7% 0%;
 }
 .disc-nft-cat-tabcontent-box-card-info-price {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin-top: 6%;
+  margin: 6% 0;
 }
 .disc-nft-cat-tabcontent-box-card-info-price-left {
   display: flex;
@@ -534,7 +535,7 @@ body {
 .disc-nft-cat-tabcontent-box-card-info-price-left img {
   width: 9.359px;
   height: 15.359px;
-  margin: 0 2%;
+  margin: 0 2% 0 0;
 }
 .disc-nft-cat-tabcontent-box-card-info-price-left span {
   color: #00AC4F;
@@ -543,10 +544,41 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  padding-top: 2%;
 }
 .disc-nft-cat-tabcontent-box-card-info-price-right {
   display: flex;
   flex-flow: row wrap;
-  justify-self: flex-end;
+  justify-content: flex-end;
   width: 50%;
+}
+.disc-nft-cat-tabcontent-box-card-info-price-right span {
+  color: #838383;
+  text-align: right;
+  font-family: "DM Sans", sans-serif;
+  font-size: 13.165px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19.146px;
+}
+.disc-nft-cat-tabcontent-box-card-bid {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin: 0 5%;
+}
+.disc-nft-cat-tabcontent-box-card-bid-divider {
+  width: 100%;
+  height: 1.064px;
+  background: #F4F4F4;
+}
+.disc-nft-cat-tabcontent-box-card-bid-time {
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.disc-nft-cat-tabcontent-box-card-bid-place {
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
 }/*# sourceMappingURL=style.css.map */
