@@ -308,4 +308,62 @@
   .active {
     display: none;
   }
+}
+.amazing-nft {
+  margin-top: 120px;
+  padding: 120px 120px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(217, 224, 236, 0.2);
+}
+.amazing-nft-left-title {
+  font-family: "Integral CF", sans-serif;
+  color: #000000;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.amazing-nft-center {
+  display: inline;
+}
+.amazing-nft-center-icon {
+  float: left;
+  padding-right: 15px;
+}
+.amazing-nft-center-text {
+  float: right;
+}
+.amazing-nft-center-text h3 {
+  padding-bottom: 12px;
+  font-family: "DM Sans", sans-serif;
+  color: #292d32;
+  font-size: 1.25rem;
+}
+.amazing-nft-center-text p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.75rem;
+  color: #696969;
+  line-height: 22.4px;
+}
+.amazing-nft-right {
+  display: inline;
+}
+.amazing-nft-right-icon {
+  float: left;
+  padding-right: 15px;
+}
+.amazing-nft-right-text {
+  float: right;
+}
+.amazing-nft-right-text h3 {
+  padding-bottom: 12px;
+  font-family: "DM Sans", sans-serif;
+  color: #292d32;
+  font-size: 1.25rem;
+}
+.amazing-nft-right-text p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.75rem;
+  color: #696969;
+  line-height: 22.4px;
 }/*# sourceMappingURL=style.css.map */

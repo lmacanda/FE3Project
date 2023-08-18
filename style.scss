@@ -414,3 +414,69 @@ $fontSize60: 3.75rem;
     display: none;
   }
 }
+
+.amazing-nft {
+  margin-top: 120px;
+  padding: 120px 120px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(217.2, 223.55, 235.88, 0.2);
+
+  &-left {
+    &-title {
+      font-family: $FFamilyInteg;
+      color: $primary-black;
+      font-size: $fontSize28;
+      text-transform: uppercase;
+      font-weight: $font-weightBold;
+    }
+  }
+  &-center {
+    display: inline;
+
+    &-icon {
+      float: left;
+      padding-right: 15px;
+    }
+    &-text {
+      float: right;
+
+      h3 {
+        padding-bottom: 12px;
+        font-family: $FFamilyDM;
+        color: $amaze-black;
+        font-size: $fontSize20;
+      }
+      p {
+        font-family: $FFamilyDM;
+        font-size: $fontSize12;
+        color: $amaze-gray;
+        line-height: 22.4px;
+      }
+    }
+  }
+  &-right {
+    display: inline;
+
+    &-icon {
+      float: left;
+      padding-right: 15px;
+    }
+    &-text {
+      float: right;
+
+      h3 {
+        padding-bottom: 12px;
+        font-family: $FFamilyDM;
+        color: $amaze-black;
+        font-size: $fontSize20;
+      }
+      p {
+        font-family: $FFamilyDM;
+        font-size: $fontSize12;
+        color: $amaze-gray;
+        line-height: 22.4px;
+      }
+    }
+  }
+}
