@@ -2,17 +2,18 @@
 
 //Navbar
 
-const navToggle = document.querySelector(".top_menu_mobile_nav_toggle");
 const topMenuNav = document.querySelector(".top_menu_nav");
-const closeIcon = document.querySelector(
-  ".top_menu_mobile_nav_toggle_icon_close_menu"
-);
-const menuIcon = document.querySelector(
-  ".top_menu_mobile_nav_toggle_icon_menu"
-);
+const closeIcon = document.querySelector(".top_menu_toggle_icon_close_menu");
+const menuIcon = document.querySelector(".top_menu_toggle_icon_menu");
 
-navToggle.addEventListener("click", () => {
+menuIcon.addEventListener("click", () => {
   topMenuNav.classList.toggle("opened");
   closeIcon.classList.toggle("active");
-  menuIcon.classList.toggle("active");
+  menuIcon.classList.toggle("hide");
+});
+
+closeIcon.addEventListener("click", () => {
+  topMenuNav.classList.toggle("opened");
+  closeIcon.classList.toggle("active");
+  menuIcon.classList.toggle("hide");
 });
