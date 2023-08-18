@@ -19,10 +19,10 @@ navToggle.addEventListener("click", () => {
 
 
 /* Discover More NFTs Tabs */
-const nftTabButtons = document.querySelectorAll(".disc-nft-cat-tab-left-tablinks");
+const nftTabButtons = document.querySelectorAll(".disc-nft-ctr-cat-tab-left-tablinks");
 nftTabButtons.forEach((button) => {
   button.addEventListener("click", (e) => {
-    const tabcontent = document.querySelectorAll(".disc-nft-cat-tabcontent");
+    const tabcontent = document.querySelectorAll(".disc-nft-ctr-cat-tabcontent");
     tabcontent.forEach((tab) => {
       tab.style.display = "none";
     });
