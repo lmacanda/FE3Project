@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap");
+@font-face {
+  font-family: "Integral CF";
+  src: url(fonts/IntegralCF-Regular.otf);
+}
+/* @font-face {
+  font-family: "Averta Demo";
+  src: url(fonts/AvertaDemo-Regular.otf);
+} */
 @font-face {
     font-family: "Integral CF-Bold";
     font-style: normal;
@@ -59,8 +68,21 @@
     height: 272px;
     width: 266px;
      border-radius: 11px;
-  background-color: #c4c4c4;
+  background-color: #ffffff;
   }
+  .integralcf-bold-black-28px{ width: 460px;
+    height: 34px;
+    flex-grow: 0;
+    /* margin: 0 359px 55px 1px; */
+    font-family: "Integral CF-bold";
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;}
   .flex-col-13 {
     align-items: flex-start;
     align-self: flex-end;
