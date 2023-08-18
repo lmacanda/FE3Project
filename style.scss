@@ -700,6 +700,16 @@ body {
                     font-weight: f.$font-weightMedium;
                     line-height: 19.146px;
                   }
+
+                  &:hover, &:focus, &.active {
+                    color: c.$primary-white;
+                    background: c.$discover-nft-blue;
+                  }
+
+                  &:hover span, &:focus span, &.active span {
+                    color: c.$primary-white;
+                    cursor: pointer;
+                  }
   
                 }
                 
@@ -719,6 +729,11 @@ body {
                   font-style: normal;
                   font-weight: f.$font-weightMedium;
                   line-height: normal;
+
+                  &:hover, &:focus, &.active {
+                    color: c.$discover-nft-card-green;
+                  }
+
                 }
   
               }
@@ -757,6 +772,12 @@ body {
       font-weight: f.$font-weightMedium;
       line-height: normal;
       margin-bottom: 3%;
+
+      &:hover, &:focus, &.active {
+        color: c.$primary-white;
+        background: c.$discover-nft-blue;
+      }
+
     }
 
   }

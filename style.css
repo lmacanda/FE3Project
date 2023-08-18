@@ -605,6 +605,14 @@ body {
   font-weight: 500;
   line-height: 19.146px;
 }
+.disc-nft-ctr-cat-tabcontent-box-card-bid-time-badge:hover, .disc-nft-ctr-cat-tabcontent-box-card-bid-time-badge:focus, .disc-nft-ctr-cat-tabcontent-box-card-bid-time-badge.active {
+  color: #ffffff;
+  background: #3D00B7;
+}
+.disc-nft-ctr-cat-tabcontent-box-card-bid-time-badge:hover span, .disc-nft-ctr-cat-tabcontent-box-card-bid-time-badge:focus span, .disc-nft-ctr-cat-tabcontent-box-card-bid-time-badge.active span {
+  color: #ffffff;
+  cursor: pointer;
+}
 .disc-nft-ctr-cat-tabcontent-box-card-bid-place {
   width: 50%;
   display: flex;
@@ -619,6 +627,9 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.disc-nft-ctr-cat-tabcontent-box-card-bid-place-link:hover, .disc-nft-ctr-cat-tabcontent-box-card-bid-place-link:focus, .disc-nft-ctr-cat-tabcontent-box-card-bid-place-link.active {
+  color: #00AC4F;
 }
 .disc-nft-more {
   position: relative;
@@ -642,4 +653,8 @@ body {
   font-weight: 500;
   line-height: normal;
   margin-bottom: 3%;
+}
+.disc-nft-more-btn:hover, .disc-nft-more-btn:focus, .disc-nft-more-btn.active {
+  color: #ffffff;
+  background: #3D00B7;
 }/*# sourceMappingURL=style.css.map */
