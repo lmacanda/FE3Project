@@ -414,3 +414,96 @@ $fontSize60: 3.75rem;
     display: none;
   }
 }
+
+// SELL UP NFT
+
+.sell-up-nft {
+  display: flex;
+  margin: 102px 120px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  &-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+
+    &-col1 {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+
+      &-top {
+        position: relative;
+        .sell-profile-pic1 {
+          position: absolute;
+          right: -30px;
+          bottom: -30px;
+        }
+      }
+      &-down {
+        // margin-top: 52px;
+        margin-top: auto;
+        margin-left: auto;
+        position: relative;
+        .sell-profile-pic3 {
+          position: absolute;
+          right: -30px;
+          bottom: -30px;
+        }
+      }
+    }
+    &-col2 {
+      position: relative;
+
+      .sell-profile-pic2 {
+        position: absolute;
+        right: -30px;
+        bottom: -30px;
+      }
+    }
+  }
+
+  &-right {
+    width: 50%;
+    &-title {
+      font-family: $FFamilyInteg;
+      font-size: $fontSize28;
+      text-transform: uppercase;
+      padding-bottom: 40px;
+    }
+    &-text {
+      font-size: $fontSize18;
+      font-family: $FFamilyDM;
+      color: #636363;
+      font-size: 18px;
+      line-height: 28.8px;
+      padding-bottom: 32px;
+    }
+
+    &-btn {
+      padding: 20px 40px;
+      color: $primary-white;
+      background-color: $primary-blue;
+      font-family: $FFamilyAverta;
+      font-size: $fontSize20;
+      border-radius: 50px;
+      border-style: none;
+    }
+  }
+}
+
+@media (max-width: 799px) {
+  .sell-up-nft {
+    flex-direction: column;
+
+    &-right {
+      width: 100%;
+      text-align: center;
+    }
+    &-left {
+      width: 100%;
+    }
+  }
+}

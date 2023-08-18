@@ -308,4 +308,87 @@
   .active {
     display: none;
   }
+}
+.sell-up-nft {
+  display: flex;
+  margin: 102px 120px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+.sell-up-nft-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.sell-up-nft-left-col1 {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.sell-up-nft-left-col1-top {
+  position: relative;
+}
+.sell-up-nft-left-col1-top .sell-profile-pic1 {
+  position: absolute;
+  right: -30px;
+  bottom: -30px;
+}
+.sell-up-nft-left-col1-down {
+  margin-top: auto;
+  margin-left: auto;
+  position: relative;
+}
+.sell-up-nft-left-col1-down .sell-profile-pic3 {
+  position: absolute;
+  right: -30px;
+  bottom: -30px;
+}
+.sell-up-nft-left-col2 {
+  position: relative;
+}
+.sell-up-nft-left-col2 .sell-profile-pic2 {
+  position: absolute;
+  right: -30px;
+  bottom: -30px;
+}
+.sell-up-nft-right {
+  width: 50%;
+}
+.sell-up-nft-right-title {
+  font-family: "Integral CF", sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+}
+.sell-up-nft-right-text {
+  font-size: 1.125rem;
+  font-family: "DM Sans", sans-serif;
+  color: #636363;
+  font-size: 18px;
+  line-height: 28.8px;
+  padding-bottom: 32px;
+}
+.sell-up-nft-right-btn {
+  padding: 20px 40px;
+  color: #ffffff;
+  background-color: #3d00b7;
+  font-family: "Averta Demo", sans-serif;
+  font-size: 1.25rem;
+  border-radius: 50px;
+  border-style: none;
+}
+
+@media (max-width: 799px) {
+  .sell-up-nft {
+    flex-direction: column;
+  }
+  .sell-up-nft-right {
+    width: 100%;
+    text-align: center;
+  }
+  .sell-up-nft-left {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
