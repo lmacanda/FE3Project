@@ -14,25 +14,63 @@
     src: url("https://fonts.animaapp.com/IntegralCF-Bold") format("opentype");
   }
   @import url("https://fonts.googleapis.com/css? family=DM+Sans:700, 400 | Roboto:400 | Poppins:600");
-  .nft-market-place .collection {
+  .nft-market-place {
     align-items: flex-start;
     display: flex;
     margin-top: 134px;
   }
   .collection-nft {
-    height: 619px;
-    margin-left: 2px;
-    min-width: 1442px;
-     flex-grow: 0;
-  margin: 134px 0 102px;
-  padding: 65px 120px 98.7px;
-  -webkit-backdrop-filter: blur(50px);
-  backdrop-filter: blur(50px);
-  background-color: rgba(217, 224, 236, 0.2);
+    margin: 20px 10px;
+    padding: 20px;
+    /* background-color: rgba(217, 224, 236, 0.2); */
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
   }
+  
+  @media (min-width: 576px) {
+    .collection-nft {
+      margin: 50px auto;
+      padding: 30px;
+      width:auto;
+      padding-left: 60px;
+      /* max-width: 540px; */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .collection-nft {
+      margin: 80px auto;
+      padding: 40px;
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .collection-nft {
+      margin: 100px 10px;
+      padding: 50px;
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .collection-nft {
+      /* margin: 120px auto; */
+      /* padding: 60px; */
+      max-width: 1140px;
+    }
+  }
+  
+  
   .group-container-2{
     display:flex;
     gap:32px;
+  }
+  @media (max-width: 768px) {
+    .group-container-2 {
+      flex-direction: column;
+      gap: 16px; /* Adjust the gap for smaller screens if needed */
+    }
   }
   .overlap-group12 {
     -webkit-backdrop-filter: blur (50px) brightness(100%);
@@ -44,7 +82,7 @@
     gap: 56px;
     min-height: 619px;
     padding: 64px 0;
-    width: 1440px;
+    /* width: 1440px; */
   }
   .collection-featured-nf-ts {
     letter-spacing: 0;
