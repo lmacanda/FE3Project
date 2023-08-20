@@ -41,47 +41,58 @@ const nftTabButtons = document.querySelectorAll(".disc-nft-ctr-cat-tab-left-tabl
 nftTabButtons.forEach((button) => {
   button.addEventListener("click", (e) => {
     const tabcontent = document.querySelectorAll(".disc-nft-ctr-cat-tabcontent");
+    
+    // Hide all tab contents
     tabcontent.forEach((tab) => {
       tab.style.display = "none";
     });
 
+    // Remove 'active' class from all tab buttons
     nftTabButtons.forEach((button) => {
       button.className = button.className.replace(" active", "");
     });
 
-    document.getElementById(e.target.textContent.split(' ').join('').toLowerCase()).style.display = "block";
-    e.target.className += " active";
+    // Show the selected tab content
+    const selectedTabId = e.target.textContent.split(' ').join('').toLowerCase();
+    const selectedTab = document.getElementById(selectedTabId);
+    selectedTab.style.display = "block";
 
-    console.log(e.target.textContent.split(' ').join('').toLowerCase());
+    // Add 'active' class to the clicked tab button
+    e.target.className += " active";
+    
+    // Clear previously added cards from the selected tab
+    while (selectedTab.children[0].firstChild) {
+      selectedTab.children[0].removeChild(selectedTab.children[0].firstChild);
+    }
+
+    // Log the selected tab's identifier
+    console.log(selectedTabId);
+
+    // Iterate through NFTs to populate cards in the selected tab
+    let card = null;
     nfts.forEach((nft) => {
 
-      let card = createCard(nft.name, nft.category, nft.price, nft.image, nft.time, nft.users);
-
-      // Check current tab category with nft category
-      console.log(nft.category.toLocaleLowerCase());
-
-      if(nft.category.toLocaleLowerCase() == e.target.textContent.split(' ').join('').toLowerCase()){
+      if (selectedTabId == "allcategories") {
+        // Create a card using the provided data and append to the tab's content
         card = createCard(nft.name, nft.category, nft.price, nft.image, nft.time, nft.users);
-        const currentTab = document.getElementById(e.target.textContent.split(' ').join('').toLowerCase());
-        console.log(currentTab.children[0]);
-        currentTab.children[0].appendChild(card);
+        selectedTab.children[0].appendChild(card);
       } else {
-        const currentTab = document.getElementById("allcategories");
-        console.log(currentTab.children[0]);
-        currentTab.children[0].appendChild(card);
-      }
-    
-    });
 
+        if (nft.category.toLowerCase() == selectedTabId) {
+          // Create a card using the provided data and append to the tab's content
+          card = createCard(nft.name, nft.category, nft.price, nft.image, nft.time, nft.users);
+          selectedTab.children[0].appendChild(card);
+        }
+        
+      }
+       
+    });
   });
 });
 
 document.getElementById("defaultTab").click();
 
-// Get the container where you want to add the cards
-const container = document.getElementById("card-container");
-
-
+// Function to create cards
 function createCard(name, category, price, image, time, users) {
   const card = document.createElement("div");
   card.classList.add("disc-nft-ctr-cat-tabcontent-box-card");
