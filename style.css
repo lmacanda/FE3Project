@@ -390,3 +390,154 @@
     transform: translateX(-128%);
   }
 }/*# sourceMappingURL=style.css.map */
+
+body input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f7f7;
+}
+
+.container-footer {
+  max-width: 1170px;
+  margin: auto;
+  padding: 20px;
+}
+
+footer {
+  background-color: #faf7f7;
+  color: #000000;
+  padding: 70px 0;
+  font-size: 16px;
+  position: relative;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.column {
+  padding: 0 15px;
+}
+
+h3 {
+  color: #000000;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-menu li {
+  margin-top: 8px;
+}
+
+.footer-menu a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-menu a:hover {
+  color: #27bcda;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social i {
+  color: #1d5cc3;
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+  margin: 0 10px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 1.8em;
+  transition: color 0.3s ease;
+  border-radius: 50%;
+  background-color: #f1f2f2;
+  padding: 0.2em;
+  left: 120px;
+}
+
+.social i:hover {
+  color: #ffffff;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.email-subscription {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.email-subscription input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.email-subscription button {
+  background-color: #1919d2;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-container-footer button:hover {
+  background-color: #b58209;
+}
+
+#sub {
+  display: flex;
+  background-color: #ffffff;
+  padding: 0.2rem;
+  outline: 1px solid grey;
+}
+
+#sub,
+#sub button {
+  border-radius: 20px;
+}
+
+#sub input {
+  border: none;
+  outline: none;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  border-top: solid 5px black;
+}
+
+@media screen and (max-width: 850px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .social {
+    justify-content: center;
+  }
+}
