@@ -40,6 +40,7 @@ $discover-gray: #838383;
 /*Footer*/
 $footer-gray: #959595;
 $footer-black: #3d3d3d;
+$footer_border: #f1f1f1;
 
 $FFamilyDM: "DM Sans", sans-serif;
 $FFamilyAverta: "Averta Demo", sans-serif;
@@ -188,6 +189,7 @@ $fontSize60: 3.75rem;
 
 .hero {
   margin-top: 72px;
+  margin-bottom: 100px;
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
@@ -372,6 +374,155 @@ $fontSize60: 3.75rem;
             font-size: $fontSize16;
             font-weight: $font-weightBold;
           }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  gap: 12%;
+
+  &_nftrs_col {
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+    width: 37%;
+
+    &_title {
+      font-family: $FFamilyInteg;
+      font-size: $fontSize24;
+      font-weight: $font-weightBold;
+    }
+
+    &_text {
+      color: $primary-gray;
+      font-family: $FFamilyAverta;
+      font-size: $fontSize14;
+      font-weight: $font-weightLight;
+    }
+
+    &_socials {
+      display: inline-flex;
+      gap: 16px;
+
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &_market_place_col {
+    width: 13%;
+    font-family: $FFamilyDM;
+
+    &_title {
+      font-size: $fontSize18;
+      font-weight: $font-weightBold;
+      text-transform: capitalize;
+      margin-bottom: 24px;
+    }
+    &_list {
+      list-style: none;
+
+      &_item a {
+        text-decoration: none;
+        color: $footer-black;
+        font-size: $fontSize14;
+        font-weight: $font-weightMedium;
+        line-height: 200%;
+
+        &:hover {
+          color: $primary-blue;
+        }
+        &:focus {
+          color: $primary-blue;
+        }
+      }
+    }
+  }
+
+  &_my_account_col {
+    width: 13%;
+    font-family: $FFamilyDM;
+
+    &_title {
+      font-size: $fontSize18;
+      font-weight: $font-weightBold;
+      text-transform: capitalize;
+      margin-bottom: 24px;
+    }
+    &_list {
+      list-style: none;
+
+      &_item a {
+        text-decoration: none;
+        color: $footer-black;
+        font-size: $fontSize14;
+        font-weight: $font-weightMedium;
+        line-height: 200%;
+
+        &:hover {
+          color: $primary-blue;
+        }
+        &:focus {
+          color: $primary-blue;
+        }
+      }
+    }
+  }
+
+  &_stay_in_the_loop {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+    font-family: $FFamilyDM;
+
+    &_title {
+      font-size: $fontSize18;
+      font-weight: $font-weightBold;
+      text-transform: capitalize;
+    }
+
+    &_text {
+      color: $primary-gray;
+      font-family: $FFamilyAverta;
+      font-size: $fontSize14;
+      font-weight: $font-weightLight;
+    }
+
+    &_subscribe_box {
+      border: 2px solid $footer_border;
+      border-radius: 45.595px;
+      background: $primary-white;
+      display: inline-flex;
+      justify-content: space-between;
+
+      &_input {
+        margin: 5%;
+        color: $footer-gray;
+        font-size: $fontSize12;
+        font-weight: $font-weightLight;
+        outline: none;
+        border: none;
+      }
+
+      &_btn {
+        background-color: $collection-nft-blue;
+        color: $primary-white;
+        border: 2px solid $collection-nft-blue;
+        padding: 15.2px 30.4px;
+        font-size: $fontSize12;
+        font-weight: $font-weightLight;
+        border-radius: 45.595px;
+        margin: 1%;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $primary-white;
+          color: $collection-nft-blue;
         }
       }
     }
