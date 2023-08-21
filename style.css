@@ -277,6 +277,107 @@
   font-weight: 700;
 }
 
+.top-collection {
+  width: 1250px;
+  height: 540px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.top-collection .columns {
+  width: 33%;
+}
+.top-collection .columns:last-child {
+  border-left: 1px solid #ccc;
+}
+.top-collection .column-1-text-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+.top-collection .column-1-text-box .column-1-author-img-descript {
+  display: flex;
+}
+.top-collection .column-1-text-box .column-1-author-img-descript .column-1-author-img {
+  width: 80px;
+  margin-right: 5px;
+}
+.top-collection .second-column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.top-collection .second-column .top-cell {
+  display: flex;
+  gap: 20px;
+}
+.top-collection .second-column .top-cell .cell-icons {
+  display: flex;
+  gap: 10px;
+}
+.top-collection .second-column .cta-place-a-bid {
+  width: Hug 113px;
+  height: Hug 45px;
+  padding: 14px 20px 14px 20px;
+  border-radius: 50px;
+  gap: 10px;
+  background-color: #3d00b7;
+  color: white;
+  margin-top: 5px;
+  border: none;
+}
+.top-collection .second-column .outline {
+  width: Hug 113px;
+  height: Hug 45px;
+  padding: 14px 20px 14px 20px;
+  border-radius: 50px;
+  gap: 10px;
+  background-color: white;
+  color: black;
+  border: 1px solid #3d00b7;
+}
+.top-collection .third-column {
+  display: flex;
+  flex-direction: column;
+}
+.top-collection .third-column .third-column-cell-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-collection .third-column .cell-wall {
+  margin-left: 5%;
+}
+.top-collection .third-column .third-cell-img {
+  width: 50px;
+  height: 50px;
+  margin-top: 0;
+}
+.top-collection .third-column .last-days {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3d00b7;
+}
+.top-collection .third-column .top-collection-rate {
+  width: 81px;
+  height: 21px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.025em;
+  text-align: right;
+  color: #14c8b0;
+}
+.top-collection .third-column .red-rate {
+  color: #ff002e;
+}
+
 @media (max-width: 600px) {
   .top_menu {
     margin-left: 11px;
