@@ -14,8 +14,14 @@
 /*Discover*/
 /*Footer*/
 /*Top_Menu*/
+.dots {
+  position: absolute;
+  transform: translate(25px, 394px);
+  z-index: -1;
+}
+
 .top_menu {
-  margin-top: 31px;
+  margin: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -111,7 +117,7 @@
 
 /*Hero*/
 .hero {
-  margin-top: 72px;
+  margin: 5%;
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
@@ -369,8 +375,7 @@
     width: 310px;
     height: 341px;
     position: absolute;
-    right: 30px;
-    transform: translateY(16%);
+    transform: translate(-110%, 16%);
   }
   .hero_right_img2 {
     background-image: url(hero_assets/unsplash_pVoEPpLw818.png);
@@ -378,7 +383,7 @@
     width: 356px;
     height: 391.6px;
     position: absolute;
-    transform: translate(-120%, 7%);
+    transform: translate(-119%, 7%);
   }
   .hero_right_img1 {
     position: absolute;
@@ -386,6 +391,6 @@
     z-index: 30;
     width: 400px;
     height: 440px;
-    transform: translateX(-128%);
+    transform: translateX(-126%);
   }
 }/*# sourceMappingURL=style.css.map */

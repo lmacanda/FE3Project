@@ -68,8 +68,14 @@ $fontSize60: 3.75rem;
 
 /*Top_Menu*/
 
+.dots {
+  position: absolute;
+  transform: translate(25px, 394px);
+  z-index: -1;
+}
+
 .top_menu {
-  margin-top: 31px;
+  margin: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -187,7 +193,7 @@ $fontSize60: 3.75rem;
 /*Hero*/
 
 .hero {
-  margin-top: 72px;
+  margin: 5%;
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
@@ -495,8 +501,7 @@ $fontSize60: 3.75rem;
         width: 310px;
         height: 341px;
         position: absolute;
-        right: 30px;
-        transform: translateY(16%);
+        transform: translate(-110%, 16%);
       }
 
       &_img2 {
@@ -505,7 +510,7 @@ $fontSize60: 3.75rem;
         width: 356px;
         height: 391.6px;
         position: absolute;
-        transform: translate(-120%, 7%);
+        transform: translate(-119%, 7%);
       }
 
       &_img1 {
@@ -514,7 +519,7 @@ $fontSize60: 3.75rem;
         z-index: 30;
         width: 400px;
         height: 440px;
-        transform: translateX(-128%);
+        transform: translateX(-126%);
       }
     }
   }
