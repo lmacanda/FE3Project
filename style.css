@@ -439,8 +439,8 @@
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   border-radius: 60px;
-  border: 1px solid #2639ED;
-  color: var(--palatinate-blue, #2639ED);
+  border: 1px solid #2639ed;
+  color: var(--palatinate-blue, #2639ed);
   font-size: 0.68756rem;
   font-style: normal;
   line-height: normal;
@@ -449,5 +449,5 @@
 }
 .collectionBtn:hover {
   color: #fff;
-  background-color: #2639ED;
+  background-color: #2639ed;
 }/*# sourceMappingURL=style.css.map */

@@ -23,34 +23,34 @@ $siteWidth: 1440px;
 $primary-neutral: #efefef;
 $secondary-neutral: #c0c0c0;
 
-$IntReg: 'IntegralCF-Regular', sans-serif;
-$IntMed: 'IntegralCF-Medium', sans-serif;
-$IntBold: 'IntegralCF-Bold', sans-serif;
-$Averta: 'AvertaDemo-Regular', sans-serif;
+$IntReg: "IntegralCF-Regular", sans-serif;
+$IntMed: "IntegralCF-Medium", sans-serif;
+$IntBold: "IntegralCF-Bold", sans-serif;
+$Averta: "AvertaDemo-Regular", sans-serif;
 
 $white: #fff;
-$interdimensionalBlue: #3D00B7;
-$palatinateBlue: #2639ED;
-$tiffanyBlue: #14C8B0;
-$green: #00AC4F;
-$ruddy: #FF002E;
+$interdimensionalBlue: #3d00b7;
+$palatinateBlue: #2639ed;
+$tiffanyBlue: #14c8b0;
+$green: #00ac4f;
+$ruddy: #ff002e;
 $black: #000;
-$blackOlive: #3A3A3A;
+$blackOlive: #3a3a3a;
 $davysGray: #565656;
 $graniteGray: #636363;
 $dimGray: #696969;
-$brightGray: #EFEFEF;
-$argent: #C0C0C0;
+$brightGray: #efefef;
+$argent: #c0c0c0;
 $azureishWhite: rgba(217, 224, 236, 0.2);
 $cultured: #f5f5f5;
-$purple: #5539A8;
+$purple: #5539a8;
 
 $siteWidth: 1440px;
 $sitePadding: clamp(0.625rem, -16.2981rem + 26.4423vw, 7.5rem);
 
 $breakpointDesktop: 1300px;
 $breakpointTablet: 1024px;
-$breakpointMobile: 768px;  
+$breakpointMobile: 768px;
 
 /*Amaze NFT*/
 $amaze-black: #292d32;
@@ -259,7 +259,8 @@ $fontSize60: 3.75rem;
         font-family: $FFamilyInteg;
         color: $primary-black;
         font-size: $fontSize28;
-        font-weight: $font-weightBold;}
+        font-weight: $font-weightBold;
+      }
 
       &_item {
         font-family: $FFamilyInteg;
@@ -450,7 +451,7 @@ $fontSize60: 3.75rem;
     display: none;
   }
 }
-  
+
 @mixin site {
   max-width: $siteWidth;
   padding: 0 $sitePadding;
@@ -458,144 +459,140 @@ $fontSize60: 3.75rem;
 }
 
 @mixin DMB {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700;
 }
 
 @mixin DMMed {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
 }
 
-// ===============================================
-// ================= COLLECTION ==================
-// ===============================================
-.collection__site_h3{
+.collection__site_h3 {
   width: 460px;
-    height: 34px;
-    flex-grow: 0;
-    /* margin: 0 359px 55px 1px; */
-    font-family: "Integral CF-bold";
-    font-size: 28px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
+  height: 34px;
+  flex-grow: 0;
+  /* margin: 0 359px 55px 1px; */
+  font-family: "Integral CF-bold";
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
 }
 .collection {
   background-color: $azureishWhite;
   // font-size: 200px;
   &__site {
-      @include site;
-      padding-top: 65px;
-      padding-bottom: 99px;
-      display: flex;
-      flex-direction: column;
-      gap: 65px;
+    @include site;
+    padding-top: 65px;
+    padding-bottom: 99px;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
   }
 
   &__container {
-      display: flex;
-      gap: 31px;
+    display: flex;
+    gap: 31px;
 
-      @media screen and (max-width: $breakpointMobile) {
-          flex-direction: column;
-      }
+    @media screen and (max-width: $breakpointMobile) {
+      flex-direction: column;
+    }
   }
 
   .user_collection {
-      display: flex;
-      flex: 1;
-      flex-direction: column;
-      max-width: 378.61px;
-      gap: 29.34px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 378.61px;
+    gap: 29.34px;
 
-      @media screen and (max-width: $breakpointMobile) {
-          max-width: 100%;
+    @media screen and (max-width: $breakpointMobile) {
+      max-width: 100%;
+    }
+
+    &__grid {
+      display: flex;
+      gap: 9.17px;
+
+      @media screen and (max-width: $breakpointTablet) {
+        flex-direction: column;
       }
 
+      .large-img {
+        width: 70%;
+        height: 272.27px;
+        object-fit: cover;
+        border-radius: 11px;
 
-      &__grid {
-          display: flex;
-          gap: 9.17px;
+        @media screen and (max-width: $breakpointTablet) {
+          width: 100%;
+        }
+      }
+
+      .small-images {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 8.25px;
+
+        @media screen and (max-width: $breakpointTablet) {
+          width: 100%;
+          flex-direction: row;
+        }
+
+        img {
+          height: 85.26px;
+          object-fit: cover;
+          border-radius: 11px;
 
           @media screen and (max-width: $breakpointTablet) {
-              flex-direction: column;
+            display: flex;
+            width: 33.33%;
           }
+        }
+      }
+    }
 
-          .large-img {
-              width: 70%;
-              height: 272.27px;
-              object-fit: cover;
-              border-radius: 11px;
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
 
-              @media screen and (max-width: $breakpointTablet) {
-                  width: 100%;
-              }
-          }
-
-          .small-images {
-              width: 30%;
-              display: flex;
-              flex-direction: column;
-              gap: 8.25px;
-
-              @media screen and (max-width: $breakpointTablet) {
-                  width: 100%;
-                  flex-direction: row;
-              }
-
-              img {
-                  height: 85.26px;
-                  object-fit: cover;
-                  border-radius: 11px;
-
-                  @media screen and (max-width: $breakpointTablet) {
-                      display: flex;
-                      width: 33.33%;
-                  }
-              }
-          }
+      .details {
+        display: flex;
+        justify-content: space-between;
       }
 
-      &__info {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
+      .user-info {
+        display: flex;
+        gap: 10px;
 
-          .details {
-              display: flex;
-              justify-content: space-between;
-          }
+        img {
+          width: 28px;
+          height: 28px;
+        }
 
-          .user-info {
-              display: flex;
-              gap: 10px;
-
-              img {
-                  width: 28px;
-                  height: 28px;
-              }
-
-              .by {
-                  @include DMMed;
-                  font-size: 0.875rem;
-                  color: $black;
-                  align-self: center;
-              }
-          }
+        .by {
+          @include DMMed;
+          font-size: 0.875rem;
+          color: $black;
+          align-self: center;
+        }
       }
+    }
   }
 }
-     
+
 .collectionBtn {
   @include DMB;
   border-radius: 60px;
   border: 1px solid $palatinateBlue;
-  color: var(--palatinate-blue, #2639ED);
+  color: var(--palatinate-blue, #2639ed);
   font-size: 0.68756rem;
   font-style: normal;
   line-height: normal;
@@ -603,7 +600,7 @@ $fontSize60: 3.75rem;
   height: 30px;
 
   &:hover {
-      color: $white;
-      background-color: $palatinateBlue;
+    color: $white;
+    background-color: $palatinateBlue;
   }
 }
