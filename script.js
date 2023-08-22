@@ -5,36 +5,274 @@ const nfts = [
     price: "0.2",
     image: "./discover_more_nfts_assets/images/nft-image-1.png",
     time: "3 hrs 20 mins",
-    "users": [
+    users: [
       {
-        "images": [
+        images: [
           "./discover_more_nfts_assets/images/user-1.png",
           "./discover_more_nfts_assets/images/user-2.png",
           "./discover_more_nfts_assets/images/user-3.png",
-          "./discover_more_nfts_assets/images/user-4.png"
-        ]
-      }
-    ]
+          "./discover_more_nfts_assets/images/user-4.png",
+        ],
+      },
+    ],
   },
-
   {
     name: "ArtCrypto",
     category: "Gaming",
     price: "0.2",
     image: "./discover_more_nfts_assets/images/nft-image-2.png",
     time: "3 hrs 20 mins",
-    "users": [
+    users: [
       {
-        "images": [
+        images: [
           "./discover_more_nfts_assets/images/user-1.png",
           "./discover_more_nfts_assets/images/user-2.png",
           "./discover_more_nfts_assets/images/user-3.png",
-          "./discover_more_nfts_assets/images/user-4.png"
-        ]
-      }
-    ]
-  }
+          "./discover_more_nfts_assets/images/user-4.png",
+        ],
+      },
+    ],
+  },
+  {
+    name: "ArtCrypto",
+    category: "Gaming",
+    price: "0.2",
+    image: "./discover_more_nfts_assets/images/nft-image-3.png",
+    time: "3 hrs 20 mins",
+    users: [
+      {
+        images: [
+          "./discover_more_nfts_assets/images/user-1.png",
+          "./discover_more_nfts_assets/images/user-2.png",
+          "./discover_more_nfts_assets/images/user-3.png",
+          "./discover_more_nfts_assets/images/user-4.png",
+        ],
+      },
+    ],
+  },
+  {
+    name: "ArtCrypto",
+    category: "Celebrities",
+    price: "0.2",
+    image: "./discover_more_nfts_assets/images/nft-image-4.png",
+    time: "3 hrs 20 mins",
+    users: [
+      {
+        images: [
+          "./discover_more_nfts_assets/images/user-1.png",
+          "./discover_more_nfts_assets/images/user-2.png",
+          "./discover_more_nfts_assets/images/user-3.png",
+          "./discover_more_nfts_assets/images/user-4.png",
+        ],
+      },
+    ],
+  },
+  {
+    name: "ArtCrypto",
+    category: "Sport",
+    price: "0.2",
+    image: "./discover_more_nfts_assets/images/nft-image-4.png",
+    time: "3 hrs 20 mins",
+    users: [
+      {
+        images: [
+          "./discover_more_nfts_assets/images/user-1.png",
+          "./discover_more_nfts_assets/images/user-2.png",
+          "./discover_more_nfts_assets/images/user-3.png",
+          "./discover_more_nfts_assets/images/user-4.png",
+        ],
+      },
+    ],
+  },
+  {
+    name: "ArtCrypto",
+    category: "Celebrities",
+    price: "0.2",
+    image: "./discover_more_nfts_assets/images/nft-image-3.png",
+    time: "3 hrs 20 mins",
+    users: [
+      {
+        images: [
+          "./discover_more_nfts_assets/images/user-1.png",
+          "./discover_more_nfts_assets/images/user-2.png",
+          "./discover_more_nfts_assets/images/user-3.png",
+          "./discover_more_nfts_assets/images/user-4.png",
+        ],
+      },
+    ],
+  },
+  {
+    name: "ArtCrypto",
+    category: "Music",
+    price: "0.2",
+    image: "./discover_more_nfts_assets/images/nft-image-1.png",
+    time: "3 hrs 20 mins",
+    users: [
+      {
+        images: [
+          "./discover_more_nfts_assets/images/user-1.png",
+          "./discover_more_nfts_assets/images/user-2.png",
+          "./discover_more_nfts_assets/images/user-3.png",
+          "./discover_more_nfts_assets/images/user-4.png",
+        ],
+      },
+    ],
+  },
+  {
+    name: "ArtCrypto",
+    category: "Music",
+    price: "0.2",
+    image: "./discover_more_nfts_assets/images/nft-image-2.png",
+    time: "3 hrs 20 mins",
+    users: [
+      {
+        images: [
+          "./discover_more_nfts_assets/images/user-1.png",
+          "./discover_more_nfts_assets/images/user-2.png",
+          "./discover_more_nfts_assets/images/user-3.png",
+          "./discover_more_nfts_assets/images/user-4.png",
+        ],
+      },
+    ],
+  },
+  {
+    name: "ArtCrypto",
+    category: "Music",
+    price: "0.2",
+    image: "./discover_more_nfts_assets/images/nft-image-1.png",
+    time: "3 hrs 20 mins",
+    users: [
+      {
+        images: [
+          "./discover_more_nfts_assets/images/user-1.png",
+          "./discover_more_nfts_assets/images/user-2.png",
+          "./discover_more_nfts_assets/images/user-3.png",
+          "./discover_more_nfts_assets/images/user-4.png",
+        ],
+      },
+    ],
+  },
+  {
+    name: "ArtCrypto",
+    category: "Crypto",
+    price: "0.2",
+    image: "./discover_more_nfts_assets/images/nft-image-4.png",
+    time: "3 hrs 20 mins",
+    users: [
+      {
+        images: [
+          "./discover_more_nfts_assets/images/user-1.png",
+          "./discover_more_nfts_assets/images/user-2.png",
+          "./discover_more_nfts_assets/images/user-3.png",
+          "./discover_more_nfts_assets/images/user-4.png",
+        ],
+      },
+    ],
+  },
+  {
+    name: "ArtCrypto",
+    category: "Art",
+    price: "0.2",
+    image: "./discover_more_nfts_assets/images/nft-image-2.png",
+    time: "3 hrs 20 mins",
+    users: [
+      {
+        images: [
+          "./discover_more_nfts_assets/images/user-1.png",
+          "./discover_more_nfts_assets/images/user-2.png",
+          "./discover_more_nfts_assets/images/user-3.png",
+          "./discover_more_nfts_assets/images/user-4.png",
+        ],
+      },
+    ],
+  },
+  {
+    name: "ArtCrypto",
+    category: "Gaming",
+    price: "0.2",
+    image: "./discover_more_nfts_assets/images/nft-image-3.png",
+    time: "3 hrs 20 mins",
+    users: [
+      {
+        images: [
+          "./discover_more_nfts_assets/images/user-1.png",
+          "./discover_more_nfts_assets/images/user-2.png",
+          "./discover_more_nfts_assets/images/user-3.png",
+          "./discover_more_nfts_assets/images/user-4.png",
+        ],
+      },
+    ],
+  },
+  {
+    name: "ArtCrypto",
+    category: "Crypto",
+    price: "0.2",
+    image: "./discover_more_nfts_assets/images/nft-image-2.png",
+    time: "3 hrs 20 mins",
+    users: [
+      {
+        images: [
+          "./discover_more_nfts_assets/images/user-1.png",
+          "./discover_more_nfts_assets/images/user-2.png",
+          "./discover_more_nfts_assets/images/user-3.png",
+          "./discover_more_nfts_assets/images/user-4.png",
+        ],
+      },
+    ],
+  },
+  {
+    name: "ArtCrypto",
+    category: "Celebrities",
+    price: "0.2",
+    image: "./discover_more_nfts_assets/images/nft-image-3.png",
+    time: "3 hrs 20 mins",
+    users: [
+      {
+        images: [
+          "./discover_more_nfts_assets/images/user-1.png",
+          "./discover_more_nfts_assets/images/user-2.png",
+          "./discover_more_nfts_assets/images/user-3.png",
+          "./discover_more_nfts_assets/images/user-4.png",
+        ],
+      },
+    ],
+  },
+  {
+    name: "ArtCrypto",
+    category: "Sport",
+    price: "0.2",
+    image: "./discover_more_nfts_assets/images/nft-image-1.png",
+    time: "3 hrs 20 mins",
+    users: [
+      {
+        images: [
+          "./discover_more_nfts_assets/images/user-1.png",
+          "./discover_more_nfts_assets/images/user-2.png",
+          "./discover_more_nfts_assets/images/user-3.png",
+          "./discover_more_nfts_assets/images/user-4.png",
+        ],
+      },
+    ],
+  },
+  {
+    name: "ArtCrypto",
+    category: "Celebrities",
+    price: "0.2",
+    image: "./discover_more_nfts_assets/images/nft-image-4.png",
+    time: "3 hrs 20 mins",
+    users: [
+      {
+        images: [
+          "./discover_more_nfts_assets/images/user-1.png",
+          "./discover_more_nfts_assets/images/user-2.png",
+          "./discover_more_nfts_assets/images/user-3.png",
+          "./discover_more_nfts_assets/images/user-4.png",
+        ],
+      },
+    ],
+  },
 ];
+
 
 /* Discover More NFTs Tabs */
 const nftTabButtons = document.querySelectorAll(".disc-nft-ctr-cat-tab-left-tablinks");

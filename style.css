@@ -45,6 +45,11 @@ body {
   flex-flow: column nowrap;
   margin: 40px 120px 47px 120px;
 }
+@media (max-width: 1220px) and (min-width: 1201px) {
+  .disc-nft-ctr {
+    margin: 40px 100px 47px 100px;
+  }
+}
 @media (max-width: 1200px) and (min-width: 1024px) {
   .disc-nft-ctr {
     margin: 40px 80px 47px 80px;
@@ -164,6 +169,19 @@ body {
   flex-flow: row wrap;
   gap: 2%;
 }
+@media (max-width: 1220px) and (min-width: 1201px) {
+  .disc-nft-ctr-cat-tab-left {
+    width: 70%;
+    max-width: 70%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+}
 @media (max-width: 1200px) and (min-width: 1024px) {
   .disc-nft-ctr-cat-tab-left {
     width: 55%;
@@ -246,6 +264,11 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+  /*
+  @media(max-width: 1220px) and (min-width: 1201px) {
+
+  }
+  */
 }
 .disc-nft-ctr-cat-tab-left-tablinks:hover {
   color: #ffffff;
@@ -319,6 +342,11 @@ body {
   width: 30%;
   display: flex;
   flex-flow: row wrap;
+  /*
+  @media(max-width: 1220px) and (min-width: 1201px) {
+
+  }
+  */
 }
 @media (max-width: 1200px) and (min-width: 1024px) {
   .disc-nft-ctr-cat-tab-right {
@@ -377,6 +405,11 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+  /*
+  @media(max-width: 1220px) and (min-width: 1201px) {
+
+  }
+  */
 }
 .disc-nft-ctr-cat-tab-right-filter:hover, .disc-nft-ctr-cat-tab-right-filter.active {
   color: #ffffff;
@@ -496,7 +529,7 @@ body {
 }
 @media (max-width: 1220px) and (min-width: 1201px) {
   .disc-nft-ctr-cat-tabcontent {
-    width: 100%;
+    width: 82%;
   }
 }
 @media (max-width: 1200px) and (min-width: 1024px) {
@@ -537,6 +570,11 @@ body {
   border: 1.097px solid rgba(242, 242, 242, 0.5);
   background: #ffffff;
   margin: 3% 0;
+}
+@media (max-width: 1220px) and (min-width: 1201px) {
+  .disc-nft-ctr-cat-tabcontent-box-card {
+    width: 30%;
+  }
 }
 @media (max-width: 1200px) and (min-width: 1024px) {
   .disc-nft-ctr-cat-tabcontent-box-card {
@@ -604,7 +642,12 @@ body {
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  top: -3vh;
+  top: -2vh;
+}
+@media (max-width: 1220px) and (min-width: 1201px) {
+  .disc-nft-ctr-cat-tabcontent-box-card-users {
+    top: -3vh;
+  }
 }
 @media (max-width: 1200px) and (min-width: 1024px) {
   .disc-nft-ctr-cat-tabcontent-box-card-users {
@@ -638,6 +681,9 @@ body {
   border-radius: 30.718px;
   border: 2.194px solid #ffffff;
   margin-left: 6%;
+  /*
+  @media(max-width: 1220px) and (min-width: 1201px) {}
+  */
 }
 @media (max-width: 1200px) and (min-width: 1024px) {
   .disc-nft-ctr-cat-tabcontent-box-card-users-img-1 {
@@ -886,6 +932,11 @@ body {
   flex-flow: column nowrap;
   margin: 0 5%;
 }
+@media (max-width: 1220px) and (min-width: 1201px) {
+  .disc-nft-ctr-cat-tabcontent-box-card-info {
+    margin: 0 6%;
+  }
+}
 @media (max-width: 1200px) and (min-width: 1024px) {
   .disc-nft-ctr-cat-tabcontent-box-card-info {
     margin: 0 7%;
@@ -923,6 +974,12 @@ body {
   font-weight: 700;
   line-height: 19.146px;
   margin: -7% 0%;
+}
+@media (max-width: 1220px) and (min-width: 1201px) {
+  .disc-nft-ctr-cat-tabcontent-box-card-info-h-title {
+    font-size: 1.1875rem;
+    margin: -5% 0%;
+  }
 }
 @media (max-width: 1200px) and (min-width: 1024px) {
   .disc-nft-ctr-cat-tabcontent-box-card-info-h-title {
