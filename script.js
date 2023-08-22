@@ -25,7 +25,7 @@ document.addEventListener("click", (e) => {
 });
 
 
-/* Tab filtering section */
+/* Discover More NFTs Tab section */
 const nfts = [
   {
     name: "ArtCrypto",
