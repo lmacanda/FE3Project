@@ -632,7 +632,7 @@ body {
               justify-content: flex-start;
               align-items: center;
               position: relative;
-              top: -2vh;
+              top: -3.5vh;
 
               @media(max-width: 1220px) and (min-width: 1201px) {
                 top: -3vh;
@@ -938,14 +938,14 @@ body {
                 &-title {
                   color: #000;
                   font-family: f.$FFamilyDM;
-                  font-size: f.$fontSize20;
+                  font-size: f.$fontSize18;
                   font-style: normal;
                   font-weight: 700;
                   line-height: 19.146px;
                   margin: -7% 0%;
 
                   @media(max-width: 1220px) and (min-width: 1201px) {
-                    font-size: f.$fontSize19;
+                    font-size: f.$fontSize16;
                     margin: -5% 0%;
                   }
                   

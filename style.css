@@ -642,7 +642,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  top: -2vh;
+  top: -3.5vh;
 }
 @media (max-width: 1220px) and (min-width: 1201px) {
   .disc-nft-ctr-cat-tabcontent-box-card-users {
@@ -969,7 +969,7 @@ body {
 .disc-nft-ctr-cat-tabcontent-box-card-info-h-title {
   color: #000;
   font-family: "DM Sans", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
   line-height: 19.146px;
@@ -977,7 +977,7 @@ body {
 }
 @media (max-width: 1220px) and (min-width: 1201px) {
   .disc-nft-ctr-cat-tabcontent-box-card-info-h-title {
-    font-size: 1.1875rem;
+    font-size: 1rem;
     margin: -5% 0%;
   }
 }
