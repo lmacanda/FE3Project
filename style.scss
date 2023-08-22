@@ -68,8 +68,14 @@ $fontSize60: 3.75rem;
 
 /*Top_Menu*/
 
+.dots {
+  position: absolute;
+  transform: translate(25px, 394px);
+  z-index: -1;
+}
+
 .top_menu {
-  margin-top: 31px;
+  margin: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -187,7 +193,7 @@ $fontSize60: 3.75rem;
 /*Hero*/
 
 .hero {
-  margin-top: 72px;
+  margin: 5%;
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
@@ -299,12 +305,13 @@ $fontSize60: 3.75rem;
 
         &_title {
           font-size: $fontSize28;
+          margin-bottom: 2%;
         }
 
         &_user {
           display: flex;
           align-items: center;
-          gap: 2%;
+          gap: 3%;
 
           &_name {
             font-size: $fontSize20;
@@ -393,17 +400,15 @@ $fontSize60: 3.75rem;
       z-index: 0;
       display: none;
       inset: 0rem 0rem 0rem auto;
-      background: $primary-neutral;
-      background-color: $primary-black;
+      background: $primary-white;
+      width: 40%;
+
+      box-shadow: 0 0 0.5em rgb(0, 0, 0, 0.25), 0 0 0 100vmax rgb(0 0 0 / 0.75);
 
       &_list {
         flex-direction: column;
         gap: 13px;
-        padding: 50px 20px 0 20px;
-
-        a {
-          color: $primary-white;
-        }
+        padding: 20px 20px 0 20px;
       }
     }
 
@@ -473,7 +478,7 @@ $fontSize60: 3.75rem;
       &_btn {
         order: 4;
         display: block;
-        margin: 0 auto;
+        margin: 5% auto;
       }
     }
 
@@ -481,7 +486,7 @@ $fontSize60: 3.75rem;
       flex-direction: column;
       order: 2;
       display: flex;
-      gap: 1%;
+      gap: 2%;
       justify-content: center;
     }
   }
@@ -496,8 +501,7 @@ $fontSize60: 3.75rem;
         width: 310px;
         height: 341px;
         position: absolute;
-        right: 30px;
-        transform: translateY(16%);
+        transform: translate(-110%, 16%);
       }
 
       &_img2 {
@@ -506,7 +510,7 @@ $fontSize60: 3.75rem;
         width: 356px;
         height: 391.6px;
         position: absolute;
-        transform: translate(-120%, 7%);
+        transform: translate(-119%, 7%);
       }
 
       &_img1 {
@@ -515,7 +519,7 @@ $fontSize60: 3.75rem;
         z-index: 30;
         width: 400px;
         height: 440px;
-        transform: translateX(-128%);
+        transform: translateX(-126%);
       }
     }
   }
