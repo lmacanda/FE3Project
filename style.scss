@@ -13,6 +13,7 @@ $container-height: 540px;
 $column-gap: 10px;
 $btn-main-color: #3d00b7;
 
+$azureishWhite: rgba(217, 224, 236, 0.2);
 $primary-white: #ffffff;
 $secondary-white: #dcdcdc33;
 $primary-black: #000000;
@@ -26,6 +27,35 @@ $dark-gray: #363639;
 /*Top Menu*/
 $primary-neutral: #efefef;
 $secondary-neutral: #c0c0c0;
+
+$IntReg: "IntegralCF-Regular", sans-serif;
+$IntMed: "IntegralCF-Medium", sans-serif;
+$IntBold: "IntegralCF-Bold", sans-serif;
+$Averta: "AvertaDemo-Regular", sans-serif;
+
+$white: #fff;
+$interdimensionalBlue: #3d00b7;
+$palatinateBlue: #2639ed;
+$tiffanyBlue: #14c8b0;
+$green: #00ac4f;
+$ruddy: #ff002e;
+$black: #000;
+$blackOlive: #3a3a3a;
+$davysGray: #565656;
+$graniteGray: #636363;
+$dimGray: #696969;
+$brightGray: #efefef;
+$argent: #c0c0c0;
+$azureishWhite: rgba(217, 224, 236, 0.2);
+$cultured: #f5f5f5;
+$purple: #5539a8;
+
+$siteWidth: 1440px;
+$sitePadding: clamp(0.625rem, -16.2981rem + 26.4423vw, 7.5rem);
+
+$breakpointDesktop: 1300px;
+$breakpointTablet: 1024px;
+$breakpointMobile: 768px;
 
 /*Amaze NFT*/
 $amaze-black: #292d32;
@@ -97,6 +127,22 @@ $fontSize34: 2.125rem;
   gap: 10px;
   background-color: $bg-color;
   color: $text-color;
+}
+
+@mixin site {
+  max-width: $siteWidth;
+  padding: 0 $sitePadding;
+  margin: 0 auto;
+}
+
+@mixin DMB {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+}
+
+@mixin DMMed {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
 }
 
 /*Top_Menu*/
@@ -1884,5 +1930,144 @@ $fontSize34: 2.125rem;
     .red-rate {
       color: #ff002e;
     }
+  }
+}
+
+/*collection*/
+
+.collection__site_h3 {
+  width: 460px;
+  height: 34px;
+  flex-grow: 0;
+  /* margin: 0 359px 55px 1px; */
+  font-family: "Integral CF-bold";
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+.collection {
+  background-color: $azureishWhite;
+  // font-size: 200px;
+  &__site {
+    @include site;
+    padding-top: 65px;
+    padding-bottom: 99px;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 31px;
+
+    @media screen and (max-width: $breakpointMobile) {
+      flex-direction: column;
+    }
+  }
+
+  .user_collection {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 378.61px;
+    gap: 29.34px;
+
+    @media screen and (max-width: $breakpointMobile) {
+      max-width: 100%;
+    }
+
+    &__grid {
+      display: flex;
+      gap: 9.17px;
+
+      @media screen and (max-width: $breakpointTablet) {
+        flex-direction: column;
+      }
+
+      .large-img {
+        width: 70%;
+        height: 272.27px;
+        object-fit: cover;
+        border-radius: 11px;
+
+        @media screen and (max-width: $breakpointTablet) {
+          width: 100%;
+        }
+      }
+
+      .small-images {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 8.25px;
+
+        @media screen and (max-width: $breakpointTablet) {
+          width: 100%;
+          flex-direction: row;
+        }
+
+        img {
+          height: 85.26px;
+          object-fit: cover;
+          border-radius: 11px;
+
+          @media screen and (max-width: $breakpointTablet) {
+            display: flex;
+            width: 33.33%;
+          }
+        }
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .details {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .user-info {
+        display: flex;
+        gap: 10px;
+
+        img {
+          width: 28px;
+          height: 28px;
+        }
+
+        .by {
+          @include DMMed;
+          font-size: 0.875rem;
+          color: $black;
+          align-self: center;
+        }
+      }
+    }
+  }
+}
+
+.collectionBtn {
+  @include DMB;
+  border-radius: 60px;
+  border: 1px solid $palatinateBlue;
+  color: var(--palatinate-blue, #2639ed);
+  font-size: 0.68756rem;
+  font-style: normal;
+  line-height: normal;
+  padding: 7.17px 11.41px;
+  height: 30px;
+
+  &:hover {
+    color: $white;
+    background-color: $palatinateBlue;
   }
 }
