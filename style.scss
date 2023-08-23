@@ -8,6 +8,11 @@
   src: url(fonts/AvertaDemo-Regular.otf);
 }
 
+$container-width: 1250px;
+$container-height: 540px;
+$column-gap: 10px;
+$btn-main-color: #3d00b7;
+
 $primary-white: #ffffff;
 $secondary-white: #dcdcdc33;
 $primary-black: #000000;
@@ -83,6 +88,16 @@ $fontSize26: 1.625rem;
 $fontSize30: 1.875rem;
 $fontSize32: 2rem;
 $fontSize34: 2.125rem;
+
+@mixin button($bg-color, $text-color) {
+  width: Hug (113px);
+  height: Hug (45px);
+  padding: 14px 20px 14px 20px;
+  border-radius: 50px;
+  gap: 10px;
+  background-color: $bg-color;
+  color: $text-color;
+}
 
 /*Top_Menu*/
 
