@@ -1133,7 +1133,7 @@ $fontSize34: 2.125rem;
         &-box {
           display: flex;
           flex-flow: row wrap;
-          justify-content: space-between;
+          justify-content: flex-start;
           gap: 2% 3%;
   
           &-card {

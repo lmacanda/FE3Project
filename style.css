@@ -983,7 +983,7 @@
 .disc-nft-ctr-cat-tabcontent-box {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 2% 3%;
 }
 .disc-nft-ctr-cat-tabcontent-box-card {
