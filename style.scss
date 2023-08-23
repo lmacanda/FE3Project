@@ -1781,3 +1781,93 @@ $fontSize34: 2.125rem;
   }
 }
 /* Discover NFTs Section End */
+
+/*Top-collection*/
+.top-collection {
+  width: $container-width;
+  height: $container-height;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  .columns {
+    width: 33%;
+  }
+  .columns:last-child {
+    border-left: 1px solid #ccc;
+  }
+  .column-1-text-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    .column-1-author-img-descript {
+      display: flex;
+      .column-1-author-img {
+        width: 80px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .second-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .top-cell {
+      display: flex;
+      gap: 20px;
+      .cell-icons {
+        display: flex;
+        gap: 10px;
+      }
+    }
+    .cta-place-a-bid {
+      @include button($btn-main-color, white);
+      margin-top: 5px;
+      border: none;
+    }
+    .outline {
+      @include button(white, black);
+      border: 1px solid $btn-main-color;
+    }
+  }
+  .third-column {
+    display: flex;
+    flex-direction: column;
+    .third-column-cell-2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .cell-wall {
+      margin-left: 5%;
+    }
+    .third-cell-img {
+      width: 50px;
+      height: 50px;
+      margin-top: 0;
+    }
+    .last-days {
+      font-family: DM Sans;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 23px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $btn-main-color;
+    }
+    .top-collection-rate {
+      width: 81px;
+      height: 21px;
+      font-family: Poppins;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 21px;
+      letter-spacing: -0.025em;
+      text-align: right;
+      color: #14c8b0;
+    }
+    .red-rate {
+      color: #ff002e;
+    }
+  }
+}
